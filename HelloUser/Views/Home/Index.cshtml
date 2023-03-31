@@ -1,0 +1,20 @@
+﻿@model HelloUser.Models.NameModel
+@{
+    Layout = null;
+}
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div style="text-align: center;">
+       <h2>Enter name</h2>
+       <form asp-action="Hello" method="post"> 
+           <p><input id ="N1" name ="FirstName" type ="text" value = "@Model.FirstName"</p>
+           <input type="submit" id="SendButton" value="Enter" />
+       </form>
+    </div>
+</body>
+</html>
